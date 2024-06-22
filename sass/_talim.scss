@@ -1,0 +1,73 @@
+.talim{
+    padding: 40px 0;
+    border-top: 1px solid #CCCCCC;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    .talim-top{
+        span {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                font-size: 18px;
+            }
+        display:flex;
+flex-wrap: wrap;
+gap: 160px;
+        // align-items: center;
+                h1 {
+                text-transform: uppercase;
+                        font-size: 40px;
+                        font-weight: 600;
+                        line-height: 52px;
+                        color: #302e38f2;
+                    }
+        }
+        .talim-cards{
+            display:grid;
+grid-template-columns: repeat(3,1fr);
+gap: 30px;
+.talim-card{
+   border:1px solid #CCCCCC;
+   border-radius: 10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   -ms-border-radius: 10px;
+   -o-border-radius: 10px;
+   padding: 30px 20px;
+   h2{
+    color: #2E3038;
+    text-transform: uppercase;
+   }
+   p{
+    color: #717273;
+   }
+   span{
+    color: blue;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+   }
+}
+        }
+    }
+    @media (max-width:992px) {
+        .talim{
+            .talim-top{
+             gap: 30px;
+             h1{
+                text-align: center;
+             }
+            }
+            .talim-cards{
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+    }
+    @media (max-width:567px) {
+        .talim{
+            .talim-cards{
+                grid-template-columns: repeat(1,1fr);
+            }
+        }
+    }

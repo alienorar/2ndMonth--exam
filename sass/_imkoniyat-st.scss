@@ -1,0 +1,62 @@
+.imkoniyat-st {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+margin-top: 50px;
+    border-top: 1px solid #CCCCCC;
+    padding: 20px 0;
+    span {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 18px;
+    }
+
+    h1 {
+        text-transform: uppercase;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 52px;
+        color: #302e38;
+    }
+
+    .imkoniyat-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+
+        .imkoniyat-card {
+            display: flex;
+            flex-direction: column;
+border-bottom:1px solid #CCCCCC;
+padding: 16px 0;
+gap: 20px;
+            .imkoniyat-logo {
+                background-color: #d2cfcfb4;
+                border-radius: 6px;
+                -webkit-border-radius: 6px;
+                -moz-border-radius: 6px;
+                -ms-border-radius: 6px;
+                -o-border-radius: 6px;
+                padding: 4px;
+                width: 60px;
+            }
+
+            p {
+                color: #2E303899;
+            }
+        }
+    }
+}
+@media (max-width:567px) {
+    .imkoniyat-st{
+        gap: 10px;
+        h1{
+            font-size: 24px;
+           line-height: 30px;
+        }
+        .imkoniyat-cards{
+            grid-template-columns: repeat(1,1fr);
+        }
+    }
+}

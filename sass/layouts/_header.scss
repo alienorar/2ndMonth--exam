@@ -1,0 +1,146 @@
+header{
+    border-bottom: 1px solid #CCCCCC;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 999;
+    .header-navbar{
+        padding: 20px 0; 
+        align-items: center;
+display: flex;
+justify-content: space-between;
+.header-left{
+    display: flex;
+    .header-list{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        a{
+            margin-top: 20px;
+            color: #828388;
+            font-size: 18px;
+        }
+    }
+}
+.header-right{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    .header-lang{
+        border-right: none;
+        border-bottom: none;
+        border-top: none;
+        outline: none;
+        padding: 0 20px ;
+        option{
+            border: none;
+            outline: none;
+        }
+    }
+    .sign{
+        width: 140px;
+            border: 1px solid #828388;
+            color: blue;
+            border-radius: 20px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            -ms-border-radius: 20px;
+            -o-border-radius: 20px;
+            padding: 6px 30px;
+            background-color: transparent;
+            font-size: 18px;
+}
+.user{
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+color: blue;
+display: none;
+}
+.burger{
+border: none;
+    background-color: transparent;
+    font-size: 20px;
+    color: blue;
+    display: none;
+}
+.lang{
+
+        border: none;
+        background-color: transparent;
+        font-size: 20px;
+        color: blue;
+        display: none;
+    }
+}
+}
+    }
+
+@media (max-width:1200px) {
+    header{
+        .header-navbar{
+            .header-left{
+                .header-list{
+                   
+                    a{
+                        font-size: 15px;
+                    }
+                }
+            }
+            .header-right{
+                .sign{
+                  padding: 6px 20px;
+                }
+
+            }
+        }
+    }
+}
+@media (max-width:768px) {
+    header{
+        .header-navbar{
+            .header-left{
+                .header-list{
+                     gap: 10px;
+                    a{
+                        font-size: 15px;
+                    }
+                }
+            }
+            .header-right{
+                .sign{
+                  padding: 6px 20px;
+                }
+
+            }
+        }
+    }
+}
+@media (max-width:992px) {
+    header{
+        .header-navbar{
+            .header-left{
+                .header-list{
+                    display: none;
+                }
+            }
+            .header-right{
+                .header-lang{
+                    display: none;
+                }
+                .sign{
+                    display: none;
+                }
+.user{
+    display: block;
+}
+.lang{
+    display: block;
+}
+                .burger{
+                    display: block;
+                }
+            }
+        }
+    }
+}

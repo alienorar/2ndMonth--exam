@@ -1,0 +1,31 @@
+.imkoniyat-rd{
+    display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        border-top: 1px solid #CCCCCC;
+        padding: 20px 0;
+       
+        span {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                font-size: 18px;
+            }
+        
+            h1 {
+                text-transform: uppercase;
+                font-size: 40px;
+                font-weight: 600;
+                line-height: 52px;
+                color: #302e38;
+            }
+         .imkoniyat-cards{
+            display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                gap: 30px;
+                .imkoniyat-card{
+
+                }
+}
+         }   
