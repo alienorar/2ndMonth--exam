@@ -20,7 +20,8 @@ ul a {
   -o-transition: all 0.3s linear;
 }
 ul a:hover {
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid rgb(6, 89, 233);
+  color: blue;
 }
 
 @font-face {
@@ -58,6 +59,9 @@ header .header-navbar .header-left .header-list a {
   color: #828388;
   font-size: 18px;
 }
+header .header-navbar .header-left .header-list a:hover {
+  color: rgb(3, 53, 253);
+}
 header .header-navbar .header-right {
   display: flex;
   gap: 20px;
@@ -87,21 +91,25 @@ header .header-navbar .header-right .sign {
   background-color: transparent;
   font-size: 18px;
 }
-header .header-navbar .header-right .user {
+header .header-navbar .header-right .sign:hover {
+  background-color: blue;
+  color: white;
+}
+header .header-navbar .user {
   border: none;
   background-color: transparent;
   font-size: 20px;
   color: blue;
   display: none;
 }
-header .header-navbar .header-right .burger {
+header .header-navbar .burger {
   border: none;
   background-color: transparent;
   font-size: 20px;
   color: blue;
   display: none;
 }
-header .header-navbar .header-right .lang {
+header .header-navbar .lang {
   border: none;
   background-color: transparent;
   font-size: 20px;
@@ -239,6 +247,10 @@ header .header-navbar .header-right .lang {
   background-color: transparent;
   font-size: 18px;
 }
+.about-info button:hover {
+  background-color: blue;
+  color: white;
+}
 .about-img {
   padding: 100px;
   display: flex;
@@ -332,6 +344,10 @@ header .header-navbar .header-right .lang {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.maqsad-info .maqsad-data span:hover {
+  background-color: blue;
+  color: white;
 }
 
 @media (max-width: 1120px) {
@@ -461,7 +477,20 @@ header .header-navbar .header-right .lang {
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
   padding: 4px;
+  width: 150px;
+  height: 60px;
   width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: width 2s, height 2s, transform 2s;
+}
+.imkoniyat-st .imkoniyat-cards .imkoniyat-card .imkoniyat-logo:hover {
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
 }
 .imkoniyat-st .imkoniyat-cards .imkoniyat-card p {
   color: rgba(46, 48, 56, 0.6);
@@ -490,6 +519,7 @@ header .header-navbar .header-right .lang {
 .imkoniyat-nd .imkoniyat-title {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
 }
 .imkoniyat-nd .imkoniyat-title h1 {
   text-transform: uppercase;
@@ -574,4 +604,215 @@ header .header-navbar .header-right .lang {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 30px;
+}
+.imkoniyat-rd .imkoniyat-cards .imkoniyat-card {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border: 2px solid #CCCCCC;
+  padding: 20px;
+  display: flex;
+}
+.imkoniyat-rd .imkoniyat-cards .imkoniyat-card .card-info button {
+  width: 140px;
+  border: 1px solid #828388;
+  color: blue;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  padding: 6px 30px;
+  background-color: transparent;
+  font-size: 18px;
+}
+.imkoniyat-rd .imkoniyat-cards .imkoniyat-card .card-info button:hover {
+  background-color: blue;
+  color: white;
+}
+.imkoniyat-rd .imkoniyat-cards .imkoniyat-card .card-info h2 {
+  color: #2E3038;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+}
+.imkoniyat-rd .imkoniyat-cards .imkoniyat-card .card-info p {
+  color: #828388;
+}
+
+@media (max-width: 768px) {
+  .imkoniyat-rd .imkoniyat-cards .imkoniyat-card {
+    flex-direction: column;
+  }
+}
+.xalqaro {
+  margin-top: 50px;
+  border-top: 1px solid #CCCCCC;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.xalqaro .xalqaro-desc {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.xalqaro .xalqaro-desc span {
+  display: flex;
+  gap: 5px;
+  font-size: 18px;
+  align-items: center;
+}
+.xalqaro .xalqaro-desc h1 {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 52px;
+  color: #302e38;
+}
+.xalqaro .xalqaro-cards {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 16px;
+}
+.xalqaro .xalqaro-cards .cards-left {
+  border-radius: 10px;
+  width: 100%;
+  background-image: url(../images/xalqaro-img.png);
+  background-repeat: no-repeat;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  height: 400px;
+  overflow: hidden;
+  background-size: cover;
+  display: flex;
+  justify-content: end;
+  padding: 20px;
+}
+.xalqaro .xalqaro-cards .cards-left p {
+  width: 50%;
+  color: blue;
+}
+.xalqaro .xalqaro-cards .cards-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.xalqaro .xalqaro-cards .cards-right .card {
+  height: 188px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.xalqaro .xalqaro-cards .cards-right .card .card-top {
+  display: flex;
+  justify-content: space-between;
+}
+.xalqaro .xalqaro-cards .cards-right .card .card-top h2 {
+  font-size: 24px;
+  color: #828388;
+}
+.xalqaro .xalqaro-cards .cards-right .card button {
+  width: 140px;
+  border: 1px solid #828388;
+  color: blue;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  padding: 6px 30px;
+  background-color: transparent;
+  font-size: 18px;
+}
+.xalqaro .xalqaro-cards .cards-right .card button:hover {
+  background-color: blue;
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  .xalqaro .xalqaro-desc h1 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 32px;
+  }
+  .xalqaro .xalqaro-cards {
+    grid-template-columns: auto;
+  }
+}
+.partnyorlar {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-top: 50px;
+  border-top: 1px solid #CCCCCC;
+  padding: 30px 0;
+  gap: 30px;
+}
+.partnyorlar .partnyorlar-left span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 18px;
+}
+.partnyorlar .partnyorlar-right .partnyorlar-right__top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.partnyorlar .partnyorlar-right .partnyorlar-right__top h1 {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 52px;
+  color: #302e38;
+}
+.partnyorlar .partnyorlar-right .partnyorlar-right__top p {
+  font-size: 24px;
+  color: rgba(48, 46, 56, 0.6823529412);
+  width: 70%;
+}
+.partnyorlar .partnyorlar-right .partnyorlar-right__bottom {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+}
+.partnyorlar .partnyorlar-right .partnyorlar-right__bottom .bottom-item {
+  border-bottom: 1px solid #CCCCCC;
+  border-top: 1px solid #CCCCCC;
+  padding: 30px;
+  width: 33%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.partnyorlar .partnyorlar-right .partnyorlar-right__bottom .bottom-item img {
+  width: 100px;
+}
+.partnyorlar .partnyorlar-right .partnyorlar-right__bottom #bbc {
+  border-left: 1px solid #CCCCCC;
+  border-right: 1px solid #CCCCCC;
+}
+
+@media (max-width: 1024px) {
+  .partnyorlar {
+    margin-top: 30px;
+    gap: 10px;
+    grid-template-columns: auto;
+  }
+  .partnyorlar .partnyorlar-right .partnyorlar-right__top h1 {
+    text-align: center;
+    font-size: 24px;
+  }
+  .partnyorlar .partnyorlar-right .partnyorlar-right__bottom {
+    justify-content: space-around;
+  }
 }/*# sourceMappingURL=home.css.map */

@@ -39,9 +39,21 @@ gap: 20px;
                 -ms-border-radius: 6px;
                 -o-border-radius: 6px;
                 padding: 4px;
+                width: 150px;
+                height: 60px;
                 width: 60px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: width 2s, height 2s, transform 2s;
             }
-
+.imkoniyat-logo:hover{
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
             p {
                 color: #2E303899;
             }

@@ -1,31 +1,82 @@
-.imkoniyat-rd{
+.imkoniyat-rd {
     display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        margin-top: 50px;
-        border-top: 1px solid #CCCCCC;
-        padding: 20px 0;
-       
-        span {
-                display: flex;
-                align-items: center;
-                gap: 5px;
-                font-size: 18px;
-            }
-        
-            h1 {
-                text-transform: uppercase;
-                font-size: 40px;
-                font-weight: 600;
-                line-height: 52px;
-                color: #302e38;
-            }
-         .imkoniyat-cards{
-            display: grid;
-                grid-template-columns: repeat(1, 1fr);
-                gap: 30px;
-                .imkoniyat-card{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    border-top: 1px solid #CCCCCC;
+    padding: 20px 0;
 
+    span {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 18px;
+    }
+
+    h1 {
+        text-transform: uppercase;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 52px;
+        color: #302e38;
+    }
+
+    .imkoniyat-cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+
+        .imkoniyat-card {
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            border: 2px solid #CCCCCC;
+            padding: 20px;
+            display: flex;
+
+            .card-info {
+                button {
+                    width: 140px;
+                    border: 1px solid #828388;
+                    color: blue;
+                    border-radius: 20px;
+                    -webkit-border-radius: 20px;
+                    -moz-border-radius: 20px;
+                    -ms-border-radius: 20px;
+                    -o-border-radius: 20px;
+                    padding: 6px 30px;
+                    background-color: transparent;
+                    font-size: 18px;
                 }
+
+                button:hover {
+                    background-color: blue;
+                    color: white;
+                }
+
+                h2 {
+                    color: #2E3038;
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 30px;
+                }
+
+                p {
+                    color: #828388;
+                }
+            }
+
+        }
+    }
 }
-         }   
+@media (max-width:768px) {
+    .imkoniyat-rd{
+        .imkoniyat-cards{
+.imkoniyat-card{
+    flex-direction: column;
+}
+        }
+    }
+}

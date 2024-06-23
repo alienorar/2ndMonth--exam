@@ -4,6 +4,7 @@ header{
     top: 0;
     background-color: #fff;
     z-index: 999;
+   
     .header-navbar{
         padding: 20px 0; 
         align-items: center;
@@ -20,6 +21,9 @@ justify-content: space-between;
             color: #828388;
             font-size: 18px;
         }
+                 a:hover {
+                     color: rgb(3, 53, 253);
+                 }
     }
 }
 .header-right{
@@ -50,6 +54,11 @@ justify-content: space-between;
             background-color: transparent;
             font-size: 18px;
 }
+.sign:hover {
+            background-color: blue;
+            color: white;
+        }
+}
 .user{
   border: none;
   background-color: transparent;
@@ -74,7 +83,7 @@ border: none;
     }
 }
 }
-    }
+    
 
 @media (max-width:1200px) {
     header{

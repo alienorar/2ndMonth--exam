@@ -1,0 +1,119 @@
+.xalqaro {
+    margin-top: 50px;
+    border-top: 1px solid #CCCCCC;
+    padding: 20px 0;
+display: flex;
+flex-direction: column;
+gap: 20px;
+    .xalqaro-desc {
+        display: flex;
+        justify-content: space-between;
+flex-wrap: wrap;
+gap: 10px;
+        span {
+            display: flex;
+            gap: 5px;
+            font-size: 18px;
+            align-items: center;
+        }
+
+        h1 {
+            text-transform: uppercase;
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 52px;
+            color: #302e38;
+        }
+
+    }
+
+    .xalqaro-cards {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 16px;
+
+        .cards-left {
+            border-radius: 10px;
+            width: 100%;
+            background-image: url(../images/xalqaro-img.png);
+            background-repeat: no-repeat;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            height: 400px;
+            overflow: hidden;
+            background-size: cover;
+            display: flex;
+            justify-content: end;
+            padding: 20px;
+
+            p {
+                width: 50%;
+                color: blue;
+            }
+
+        }
+
+        .cards-right {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .card {
+                height: 188px;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .card-top {
+                    display: flex;
+                    justify-content: space-between;
+
+                    h2 {
+                        font-size: 24px;
+                        color: #828388;
+                    }
+                }
+
+                button {
+                    width: 140px;
+                    border: 1px solid #828388;
+                    color: blue;
+                    border-radius: 20px;
+                    -webkit-border-radius: 20px;
+                    -moz-border-radius: 20px;
+                    -ms-border-radius: 20px;
+                    -o-border-radius: 20px;
+                    padding: 6px 30px;
+                    background-color: transparent;
+                    font-size: 18px;
+                }
+
+                button:hover {
+                    background-color: blue;
+                    color: white;
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width:1024px) {
+    .xalqaro{
+        .xalqaro-desc{
+h1 {
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 32px;
+
+    }
+        }
+        .xalqaro-cards{
+            grid-template-columns: auto ;
+        }
+      
+    }
+}
