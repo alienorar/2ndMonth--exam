@@ -1,6 +1,9 @@
 @use"../sass/layouts/reset";
 @use"../sass/layouts/header";
-@use"../about/hero";
-@use"../about/konikma";
-@use"../about/harakatlar";
+@use"./hero";
+@use"./konikma";
+@use"./harakatlar";
+@use"./xamkorlar";
+@use"./xamkorlar-nd";
+@use"./team";
 @use"../sass/layouts/footer";
