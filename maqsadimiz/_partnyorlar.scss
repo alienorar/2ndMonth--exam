@@ -1,0 +1,106 @@
+.partnyorlar-nd {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 50px;
+    border-top: 1px solid #CCCCCC;
+    padding: 30px 0;
+    gap: 20px;
+
+    span {
+        display: flex;
+        gap: 5px;
+        font-size: 18px;
+    }
+
+    h1 {
+        text-transform: uppercase;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 52px;
+        color: #302e38;
+    }
+
+    .pnd-desc {
+        font-size: 24px;
+        color: #302e38ae;
+
+    }
+
+    .partnyorlar-item {
+        border-bottom: 1px solid #b0acac;
+        overflow: hidden;
+
+
+        img {
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+
+            width: 100%;
+            height: 60%;
+            object-fit: cover;
+        }
+
+        .partnyorlar-item__bottom {
+            display: flex;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-right: 20px;
+            padding-left: 0;
+            align-items: center;
+
+            p {
+                font-size: 22px;
+                color: #847d7d;
+            }
+
+            span {
+                font-size: 24px;
+                color: blue;
+            }
+        }
+    }
+
+}
+
+@media (max-width:1024px) {
+    .partnyorlar-nd {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 30px;
+        border-top: 1px solid #CCCCCC;
+        padding: 30px 0;
+        gap: 20px;
+
+        h1 {
+
+            font-size: 30px;
+            font-weight: 600;
+            line-height: 42px;
+
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .partnyorlar-nd {
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 20px;
+        padding: 20px 0;
+        gap: 20px;
+
+        h1 {
+
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 32px;
+            text-align: center;
+        }
+
+        .pnd-desc {
+            text-align: center;
+            font-size: 20px;
+        }
+    }
+}

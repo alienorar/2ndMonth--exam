@@ -1,0 +1,28 @@
+.harakatlar {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    // justify-content: end;
+    border-bottom: #605f62 1px solid;
+
+    h1 {
+        font-size: 32px;
+        color: #2E3038;
+        text-align: center;
+        width: 100%;
+    }
+
+    p {
+        color: #5f5f62;
+        font-size: 18px;
+        width: 80%;
+    }
+}
+
+@media (max-width:1024px) {
+    .harakatlar {
+        p {
+            width: 100%;
+        }
+    }
+}
